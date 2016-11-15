@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Acid Black Cherry</title>
+	<link href="css/a,b,c.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+	<header>
+		<h1>
+		<a href="http://www.acidblackcherry.com/info.php#1576">Acid Black Cherry</a></h1>
+	</header>
+		<a><img src="images/21076990-2.jpeg" height="300" width="500" alt="ロックバンド"></a>
+		<img id="gazo" onclick="changeIMG()" src="images/abc4.jpeg"
+   width="500" height="300" border="0" alt="">
+
+
+<script>
+
+//画像を配列に格納する
+var img = new Array();
+
+img[0] = new Image();
+img[0].src = "images/abc.jpeg";
+img[1] = new Image();
+img[1].src = "images/abc3.jpeg";
+img[2] = new Image();
+img[2].src=  "images/abc2.jpeg";
+
+
+//画像番号用のグローバル変数
+var cnt=0;
+
+
+//画像切り替え関数
+function changeIMG(){
+  
+  //画像番号を進める
+  if (cnt == 2)
+  { cnt=0; }
+  else
+  { cnt++; }
+  
+  //画像を切り替える
+  document.getElementById("gazo").src=img[cnt].src;
+}
+
+</script>
+		<p>2007年にヴィジュアル系ロックバンドJanne Da Arcが発表したメンバーのソロプロジェクトの開始と共にyasuのソロプロジェクトとして始動。
+「エロ」をコンセプトにしているが、生(性)と死、恋愛、犯罪、ファンタジーなど様々な世界観を持った歌詞がある。
+音楽は激しいロック、ジャズ、ポップ、バラードなど、幅広い楽曲を揃えているのが特徴。</p>
+ 		<p>
+ 		<a><img src="images/img1_l.jpg" height="250" width="500" alt="ロックバンド"></a>
+ 		<SCRIPT type="text/javascript">
+ 			var images = ["images/abc3.jpeg","images/abc.jpeg","images/abc4.jpeg","images/abc5.jpeg" ];
+ 			var imageIndex = 1;
+ 			function showimg1(){
+ 				document.area1.src = images[imageIndex];
+ 				imageIndex++;
+ 				if (imageIndex > images.length - 1) {
+ 					imageIndex = 0;
+ 				}
+				// document.area1.src = "images/abc.jpeg";
+			}
+</SCRIPT>
+<br>
+<img src="images/abc3.jpeg" name="area1" height="250" width="500">
+<br>
+　<input type="button" onclick="showimg1()" value="ライブ画像">
+ 		<h2>来歴</h2>
+ 		<table align="center">
+	  <caption>
+	  	2016年情報
+	  </caption>
+		<thead>
+			<tr>
+				<th>日時</th>
+				<th>内容</th>
+			</tr>
+		</thead>
+			<tr>
+				<th>１月27日</th>
+				<th>LIVE CD「2015 arena tour L－エル－」発売。</th>
+		</tr>
+		<tr>
+			<td>2月17日</td>
+			<td>LIVE DVD「2015 livehouse tour S－エス－」発売。</td>
+		</tr>
+		<tr>
+			<td>8月21日</td>
+			<td>SUMMER SONIC 2016 OSAKAに出演。</td>
+		</tr>
+		<tr>
+			<td>10月4日</td>
+			<td>yasuの出血性声帯炎により、カバーアルバム『Recreation 4』の発売延期が発表される</td>
+		</tr>
+		</tfoot>
+		</table>
+		</p>
+
+<footer>
+	<form>
+	 <fieldset>
+				<legend>どっちのバンドが好き？:</legend>
+		 		<input type="checkbox" name="value" value="Acid Black Cherry">Acid Black Cherry
+		 		<input type="checkbox" name="value" value="Janne Da Arc">Janne Da Arc
+		</fieldset>
+		<fieldset>
+			<legend>思い出エピソード募集</legend>
+			<textarea name="inpression" cols="100" rows="10" placeholder="エピソードを入れてください" ></textarea>
+			
+			<p><input type="submit"></p>
+	</form>
+</footer>
+</body>
+</html>

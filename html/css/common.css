@@ -1,0 +1,141 @@
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	color: #666666;
+	font-family: Arial, sans-serif;
+  /*background: #dbffff;*/
+	/*background: url(../images/pattern.jpg);*/
+  background: linear-gradient(#dbffff,#66ccff)
+}
+div{
+		color: #666666;
+		width: 500px;
+		margin-top: 20px;
+		margin-right: auto;
+		margin-left: auto;
+		overflow: hidden;
+	}
+	a {
+		color: #ff6666;
+		text-decoration: none;
+	}
+/*	a:link{
+		color: green;
+	}
+	a:visited{
+		color: red;
+	}*/
+	a:hover{
+		color: #9990ff;
+		text-decoration: underline;
+		font-style: italic;
+	}
+	a:active{
+		color: blue;
+	}
+#container{
+	width: 960px;
+	margin: 0 auto;
+	padding: 30px;
+	background: #ffffff;
+}
+div.main{
+	width: 70%;
+	float: left;
+}
+div.sidebar{
+	width: 30%;
+	float: left;
+}
+header{
+	padding: 30px;
+	background: #d1e8ff;
+	color: #ffffff;
+	background: linear-gradient(to left bottom,#dbffff,#66ccff,#fcc,#cf6 20%, #3cc 40%,#006 70%);
+}
+footer{
+	padding: 30px;
+	background: #d1e8ff;
+	text-align: center;
+	padding: 50px;
+	background: #000000;
+	background: radial-gradient(circle at center, #fff,#000);
+}
+header h1 a{
+	color: #ccccff;
+}
+	img{
+		width: 200px;
+	}
+	span {
+		color: #9057FF;
+	}
+	h1 {
+		color: #006666;
+		font-size: 30px;
+	}
+	img {
+		float: left;
+		margin-right: 10px;
+		border-style: none;
+	}
+	
+	h2{
+		clear: both;
+	
+}
+	.btn {
+		display: inline-block;
+	}
+	.btn a {
+		background: url(../images/botan.gif) no-repeat left top;
+		width: 140px;
+		height: 36px;
+		display: block;
+		color: #ffffff;
+		font-size: 15px;
+		line-height: 36px;
+		text-align: center;
+	 }
+	 .btn a:hover {
+	 	background: url(../images/botan.gif) no-repeat right top;
+	 }
+dl {
+	text-align: center;
+}
+dl.sidemenu{
+	margin: 0;
+	padding: 0 0 5px;
+	background: #dff4e7;
+	width: 240px;
+}
+dl.sidemenu dt{
+	background: url(../images/dt_bg.jpg) repeat-x;
+	height: 32px;
+	width: 240px;
+	font-size: 15px;
+	line-height: 32px;
+	font-weight: bold;
+	color: #fff;
+	text-indent: 0.7em;
+	margin-bottom: 5px;
+}
+dl.sidemenu dd {
+	font-size: 12px;
+	line-height: 18px;
+	height: 18px;
+	text-indent: 0.7em;
+	margin: 0px;
+	padding-bottom: 5px;
+}
+dl.sidemenu dd a{
+	color: #666;
+	background: url(../images/dd_bg.gif) no-repeat 0px 0px;
+	text-decoration: none;
+	padding-left: 14px;
+}
+dl.sidemenu dd a:hover{
+	color: #f90;
+	background: url(../images/dd_bg.gif) no-repeat 2px 0px;
+}

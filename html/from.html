@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>フォーム</title>
+	<link rel="stylesheet" type="text/css" href="css/from.css">
+</head>
+<body>
+
+	<form method="post">
+		<fieldset>
+			<legend>お名前:</legend>
+		 	<label>苗字</label>
+		 		<input type="text" name="name1">
+		  <label>名前</label>
+		 		<input type="text" name="name2">
+		</fieldset>
+
+		<fieldset>
+			<legend>パスワード:</legend>
+			<label>パスワード</label>
+			<input type="password" name="passward" sizw="30" maxlength="18" title="半角英数字で入力してください" required="">
+		</fieldset>
+
+		<fieldset>
+			<legend>電話番号:</legend>
+		 	<label>電話番号</label>
+		 		<input type="tel" name="telNumbr" size="30" maxlength="17" placeholder="00-0000-0000" title="市外局番からハイフン(-)を入れて記入してください">	
+	  </fieldset>
+
+		<fieldset>
+			<legend>郵便番号:</legend>
+		 	<label>郵便番号</label>
+		 		<input type="text" name="zipCode" siz="20"
+		 		maxlength="8" title="3桁＋ハイフン(-)＋４桁で入力してください"
+		 		placeholder="123-4567" pattern="\d{3}-?\d{4}">
+	  </fieldset>
+
+	  <fieldset>
+				<legend>乗り物:</legend>
+		 	<label>乗り物名</label>
+		 		<input type="checkbox" name="value" value="タクシー">タクシー
+		 		<input type="checkbox" name="value" value="ジプニー">ジプニー
+		 		<input type="checkbox" name="value" value="バイタク">バイタク
+		 		<input type="checkbox" name="value" value="その他">その他
+		</fieldset>
+
+		<fieldset>
+			<legend>好きなセブにショッピングモール:</legend>
+		 	<label>ショッピングモール名</label>
+		 		<input type="text" name="mall" size="30"
+		 		placeholder="ショッピングモール" list="malls" required>
+			 	<datalist id="malls">
+			 		<option value="アヤラモール"></option>
+			 		<option value="SMモール"></option>
+			 		<option value="カントリーモール"></option>
+			 		<option value="JYスクエアモール"></option>
+		 </fieldset>
+
+		<fieldset>
+			<legend>ご回答:</legend>
+			<label>
+				<input type="radio" name="reply" value="回答１" checked>回答１
+			</label>
+			<label>
+				<input type="radio" name="reply" value="回答２">回答２
+			</label>
+			<label>
+				<input type="radio" name="reply" value="回答３">回答３
+			</label>
+		</fieldset>
+
+		<fieldset>
+				<legend>都道府県：</legend>
+				<select name="prefs" >
+						<option value="">--選択してください--</option>
+					<optgroup label="関東">
+						<option value="東京都">東京都</option>
+						<option value="神奈川県">神奈川県</option>
+					</optgroup>
+					<optgroup label="関西">
+						<option value="大阪府">大阪府</option>
+						<option value="京都府">京都府</option>
+						<option value="兵庫県">兵庫県</option>
+						<option value="奈良県">奈良県</option>
+						<option value="滋賀県">滋賀県</option>>
+					</optgroup>
+					<optgroup label="中国">
+						<option value="岡山県">岡山県</option>
+						<option value="鳥取県">鳥取県</option>
+						<option value="島根県">島根県</option>
+						<option value="広島県">広島県</option>
+						<option value="山口県">山口県</option>
+					</optgroup>>
+					<optgroup label="九州">
+					 <option value="鹿児島県">鹿児島県</option>
+					</optgroup>
+				</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>感想をお聞かせください</legend>
+			<textarea name="inpression" cols="30" rows="5" placeholder="感想を入れてください" readonly>最初から表示されている文字</textarea>
+		</fieldset>
+
+		<fieldset>
+			<legend>画像</legend>
+			<input type="file" name="image" accept="image/png">
+		</fieldset>
+
+		
+			<input type="hidden" name="secret" value="秘密の情報">
+				
+			<p><input type="submit">
+			<input type="button" value="ただのボタン">
+			<button>bottonタグのsubmit</button>
+			<button type="button">buttonタグのただのボタン</button></p>
+	</form>
+	<br>
+	<br>
+</body>
+</html>
