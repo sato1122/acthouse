@@ -1,0 +1,152 @@
+li {
+	list-style: none;
+	
+}
+body{
+	background-image:url(image/bimage.jpeg);
+	margin:0 auto;
+}
+h2 {
+	margin-top: 0px;
+}
+.header {
+	width: 100%;
+	height: 300px;
+}
+.header>li{
+	display:inline-block;
+	width: 20%;
+	font-size: 12px;
+}
+.main {
+	box-sizing: border-box;
+	padding: 30px;
+	float: left;
+	width: 180px;
+	height: 180px;
+	border: 1px solid #111;
+}
+nav {
+	width: 100%;
+	padding: 10px;
+	border-bottom:3px solid #111;
+	margin-bottom: 30px;
+	position: fixed;
+	top:0;
+	z-index: 10px;
+	background-color: rgba(0,0,0,0.8);
+}
+.slidshow {
+/* background-image: url(image/top2.jpeg)*/ ;
+ height: 300px;
+ width: 100%;
+ background-size: cover;
+ background-position: cover;
+
+}
+#sidemenu {
+	height: 100px;
+	width: 200px;
+}
+.contribution {
+	margin-top: 10px;
+	box-sizing: border-box;
+	padding: 30px;
+	float: left;
+	width: 180px;
+	border: 1px solid #111;
+}
+.contribution li {
+	height: 27px;
+	width: 120px;
+}
+.contribution ul{
+	margin: 0;
+	padding :0;
+	list-style: none;
+}
+#main{
+	height: 370px;
+	width: 180px;
+	float: left;
+	text-align: center;
+}
+.main ul{
+	margin: 0;
+	padding :0;
+	list-style: none;
+}
+.main li{
+	padding: 0;
+	margin: 0 auto;
+
+}
+.main li {
+	background: url(image/side2.jpeg) no-repeat left center;
+	padding: 2px 0px 3px 18px;
+	color: #555;
+	width: 100px;
+	margin: 1px 0px;
+	text-decoration: none;
+	border-bottom: 1px dotted #666666;
+	font-size: 14px;
+
+}
+.main li:hover{
+	background:url(image/side.jpeg) no-repeat left center;
+}
+#menu ul{
+	list-style: none;
+	padding:0;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+#menu li{
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+#menu li a{
+	width: 80px;
+	border-bottom: 1px dotted #555;
+	text-decoration: none;
+	color: #555;
+	padding: 0px 0px 0px 20px;
+	margin: 0px 2px;
+	text-align: left;
+	font-size: 14px;
+}
+#menu li a:hover{
+	background:url(image/maru2.png) no-repeat left center;
+}
+.content {
+	box-sizing: border-box;
+	padding: 0px 30px 30px;
+	height: auto;
+	width: 70%;
+	float: right;
+}
+.article {
+	width:900px;
+	height: auto;
+	margin: 0 auto;
+}
+.footer {
+	height: 50px;
+	width: 100%;
+	background-color: #E7E7EB;
+  clear: both;
+  text-align: center;
+  color: #7B7B7B;
+  overflow: hidden;
+}
+.image {
+	width: 568px;
+	height: 255px;
+}
+.thumbnail {
+	width: 255px;
+	height: 255px;
+}
